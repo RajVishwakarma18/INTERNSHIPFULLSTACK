@@ -1,0 +1,19 @@
+#container{
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vw;
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;  
+    /* justify-content: space-around; 
+     shift child in next row if its is ata shrink point */
+    align-items: first baseline;
+
+    flex-wrap: wrap;
+}
+#container > div {
+    border: 1px solid red;
+    width: 500px;
+    height: 300px;
+    
+}

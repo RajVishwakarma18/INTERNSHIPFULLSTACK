@@ -1,0 +1,28 @@
+#realtive-container{
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+}
+
+/* #relative-container > div{
+    border: 2px solid red;
+    height: 100px;
+    width: 100px;
+    display: inline-block; */
+
+
+div:nth-last-of-type(2){
+    position: relative;
+    top: 50px;
+    right: 100px;
+    left: 50px;
+    background-color: lightblue;
+}
+#sticky-container{
+    border: 2px solid black
+}
+#sticky-sontainer> p:nth-child(2){
+    background-color: lightcoral;
+    position:sticky;
+    top: 10px;
+}

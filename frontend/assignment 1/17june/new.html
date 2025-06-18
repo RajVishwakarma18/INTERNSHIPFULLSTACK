@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white fixed top-0 left-0 w-full z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <img src="https://via.placeholder.com/48" alt="Logo" class="w-12 h-12">
+                </div>
+
+                <!-- Menu toggle (mobile) -->
+                <div class="sm:hidden">
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+                    <label for="menu-toggle" class="cursor-pointer flex items-center">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden sm:flex gap-6">
+                    <a href="#" class="hover:text-gray-300">Item 1</a>
+                    <a href="#" class="hover:text-gray-300">Item 2</a>
+                    <a href="#" class="hover:text-gray-300">Item 3</a>
+                    <a href="#" class="hover:text-gray-300">Item 4</a>
+                    <a href="#" class="hover:text-gray-300">Item 5</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="peer-checked:flex hidden flex-col sm:hidden pt-4 pb-4 gap-3">
+                <a href="#" class="hover:text-gray-300">Item 1</a>
+                <a href="#" class="hover:text-gray-300">Item 2</a>
+                <a href="#" class="hover:text-gray-300">Item 3</a>
+                <a href="#" class="hover:text-gray-300">Item 4</a>
+                <a href="#" class="hover:text-gray-300">Item 5</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dummy content for scroll -->
+    <div class="mt-20 p-6">
+        <p class="text-gray-700">Page content goes here...</p>
+    </div>
+
+</body>
+</html>
